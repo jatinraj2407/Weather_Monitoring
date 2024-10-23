@@ -131,3 +131,20 @@ To run the tests, execute the following command:
 
 ```bash
 python -m unittest src/tests.py
+```
+
+## Docker Setup
+To run the application using Docker:
+
+Build and run the containers:
+
+docker-compose up
+Access the API on http://localhost:5000
+
+The Docker setup includes:
+
+Flask API running in a web container.
+MongoDB for storing daily weather summaries and user-defined thresholds (optional).
+
+## Conclusion
+This project provides a comprehensive solution for real-time weather monitoring, aggregation, and alerting. With the ability to define user-configurable thresholds and view historical data, it serves as an effective tool for monitoring weather conditions in real-time. The application is designed for easy deployment using Docker and includes robust error handling and testing coverage.
